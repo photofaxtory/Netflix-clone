@@ -1,0 +1,432 @@
+@font-face {
+    font-family: netflix;
+    src: url("/Assets/fonts/NetflixSans-Regular.otf");
+}
+
+* {
+    font-family: netflix;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(/Assets/Images/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 60vw;
+    height: 62px;
+}
+
+nav img {
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav .buttons {
+
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.buttons .button-sing-in {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0.50rem 1rem;
+    margin-left: 8px;
+}
+
+.buttons .button-english , .button-english  {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 20px;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    border-color: rgba(126, 119, 119, 0.841);
+    padding: 0.40rem 1rem;
+
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 10px;
+    padding: 0 20px;
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 34px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.email-input {
+    border: 1px solid rgba(249, 236, 236, 0.394);
+    background-color: rgba(23, 23, 23, 0.3);
+    padding: 10px;
+    padding-right: 90px;
+    padding-left: 10px;
+    font-size: 9px;
+
+    color: white;
+    border-radius: 0.1875rem;
+
+
+}
+
+.get-started {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem 1rem;
+    margin-left: 8px;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(68, 66, 66);
+}
+
+.first , .second , .third , .fourth {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+
+
+}
+
+.sec-text {
+    color: white;
+    width: 50%;
+}
+
+.sec-text h1 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.sec-text p {
+    
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img img {
+    width: 30vw;
+    z-index: 10;
+    position: relative;
+
+
+}
+
+.sec-img video{
+    position: absolute;
+    top: 64px;
+    right: 57px;
+    width: 22vw;
+}
+.third .sec-img video{
+    position: absolute;
+    top: 22px;
+    right: 76px;
+    width: 19vw;
+}
+
+.FAQ{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    
+    flex-direction: column;
+    
+}
+
+.FAQ h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.FAQ .question{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    cursor: pointer;
+}
+
+.FAQ .question p{
+    background-color: rgb(45, 45, 45);
+    font-weight: 400;
+    font-size: 24px;
+    padding: 1.5rem;
+    margin-bottom: 9px;
+  
+
+}
+.FAQ .question p:hover{
+    background-color: rgb(91, 91, 91);
+    font-weight: 400;
+    font-size: 24px;
+    padding: 1.5rem;
+    margin-bottom: 9px;
+  
+
+}
+
+.FAQ-button p{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px;
+}
+.FAQ-button div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.FAQ-button .email-input{
+    font-size: 15px;
+    padding: 10px;
+
+    padding-right: 265px;
+}
+
+footer{
+    width: 80vw;
+    margin: auto;
+    
+}
+
+footer span , a {
+    font-size: 16px;
+    font-weight: 400;
+   
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+
+footer #f-mm {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    width: 25%;
+    margin-bottom: 50px;
+    
+}
+.f-menu{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 80%;
+    
+
+}
+footer #f-mm p{
+    margin-bottom: 10px;
+}
+.copy{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 50px 0;
+
+}
+
+/* Styles for devices with a width up to 767 pixels (typically mobile devices) */
+@media only screen and (max-width: 767px) {
+    .main{
+        
+
+    }
+
+
+    nav{
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
+
+    .hero{
+        position: absolute;
+       top: 5;
+
+    }
+
+    .hero> :nth-child(2) {
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        margin-top: 10px ;
+    }
+
+    .email-input{
+        margin: 10px 0 20px;
+        font-size: 15px;
+    }
+    .get-started {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .first , .second , .third , .fourth {
+        max-width: 100vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 60vh;
+    }
+    .second , .fourth  {
+        flex-direction: column-reverse;
+    }
+    .second h1 {
+        font-size: 31px;
+    }
+    .fourth h1 {
+        font-size: 30px;
+    }
+ 
+
+    .sec-text{
+        width:80vw ;
+        margin: 60px 0 30px ;
+        text-align: center
+    }
+
+    .sec-img img{
+        width: 80vw;
+    }
+
+    .sec-img video{
+        width: 60vw;
+        top: 39px ;
+       
+
+    }
+    .third .sec-img video{
+        width: 45vw;
+        right: 1;
+    }
+
+    .FAQ h2 {
+        font-weight: 900;
+        font-size: 35px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .FAQ .question{
+        width: 80%;
+        
+    }
+    .FAQ .question p{
+        font-size: 18px;
+    }
+
+    .FAQ-button{
+        flex-direction: column;
+        max-width: 80%;
+        text-align: center;
+    }
+    .FAQ-button div {
+        flex-direction: column;
+    }
+.FAQ-button div .email-input{
+   padding: 15px;
+   padding-right: 50px;
+   padding-left: 10px;
+}
+
+.f-menu{
+    flex-wrap: wrap;
+
+}
+.f-menu>#f-mm{
+    width: 40%;
+    margin-top: 0;
+    
+}
+ 
+
+  }
+  
