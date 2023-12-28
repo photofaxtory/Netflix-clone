@@ -159,7 +159,7 @@ nav .buttons {
 .first , .second , .third , .fourth {
     display: flex;
     justify-content: center;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: auto;
     align-items: center;
 
@@ -227,7 +227,7 @@ nav .buttons {
 .FAQ .question{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     cursor: pointer;
 }
 
